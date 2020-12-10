@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+
+
+<Button fx:id="button" contentDisplay="GRAPHIC_ONLY" maxHeight="100.0" maxWidth="100.0" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onAction" prefHeight="100.0" prefWidth="100.0" styleClass="deck-button" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.mrletsplay.streamdeckandroid.controller.DeckButtonController" />

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.mrletsplay.streamdeckandroid.controller.ButtonIconTextController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="buttonIcon" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" />
+            <TextArea fx:id="textArea" prefHeight="50.0" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextArea>
+            <Slider fx:id="fontSizeSlider" max="50.0" min="12.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Slider>
+            <ColorPicker fx:id="textColor">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ColorPicker>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

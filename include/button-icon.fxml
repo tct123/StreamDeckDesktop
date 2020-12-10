@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.mrletsplay.streamdeckandroid.controller.ButtonIconController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="buttonIcon" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox alignment="CENTER" fillHeight="false" VBox.vgrow="NEVER">
+               <children>
+                  <Region prefWidth="200.0" />
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectFile" prefWidth="100.0" text="Select File" />
+                  <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addText" prefWidth="100.0" text="Add Text" />
+                  <Region prefWidth="200.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <ColorPicker fx:id="backgroundColor">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ColorPicker>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
