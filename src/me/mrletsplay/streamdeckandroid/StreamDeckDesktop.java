@@ -118,7 +118,9 @@ public class StreamDeckDesktop extends Application {
 								JSONObject data = a.getData();
 								switch(a.getType()) {
 									case RUN_TERMINAL:
-										Runtime.getRuntime().exec(data.getString("command"));
+										new ProcessBuilder("bash", "-c", data.getString("command"))
+											.inheritIO()
+											.start();
 										break;
 									case TYPE_TEXT:
 										new ProcessBuilder("bash", "-c", "setxkbmap de && xdotool type \"" + data.getString("text").replace("\\", "\\\\").replace("\"", "\\\"") + "\"")

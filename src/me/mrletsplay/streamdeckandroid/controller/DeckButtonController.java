@@ -17,6 +17,8 @@ import java.util.stream.Collectors;
 
 import javax.imageio.ImageIO;
 
+import org.controlsfx.control.SearchableComboBox;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -154,7 +156,8 @@ public class DeckButtonController {
 					}else if(Enum.class.isAssignableFrom(p.getType())) {
 						Enum<?>[] enums = (Enum<?>[]) p.getType().getEnumConstants();
 						
-						ChoiceBox<String> f = new ChoiceBox<>();
+						SearchableComboBox<String> f = new SearchableComboBox<>();
+//						ChoiceBox<String> f = new ChoiceBox<>();
 						StreamDeckActionParameter pAn = p.getAnnotation(StreamDeckActionParameter.class);
 //						f.setPromptText(pAn.friendlyName());
 						f.getStyleClass().add("action-parameter");
